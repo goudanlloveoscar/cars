@@ -1,6 +1,10 @@
 ---
-title: "Untitled"
-output: html_document
+title: "speed-and-distance"
+output:
+  word_document: default
+  html_document: default
+knit: (function(input_file, encoding) { out_dir <- 'docs'; rmarkdown::render(input_file,
+  encoding=encoding, output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 
 ```{r setup, include=FALSE}
@@ -26,3 +30,5 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
